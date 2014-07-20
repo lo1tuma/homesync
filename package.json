@@ -26,9 +26,8 @@
         "jscs": "1.5.8",
         "mocha": "1.20.1",
         "sinon": "1.10.3",
-        "chai": "1.9.1",
-        "sinon-chai": "2.5.0",
-        "chai-as-promised": "4.1.1",
+        "referee": "1.0.3",
+        "referee-sinon": "1.0.2",
         "istanbul": "0.3.0"
     },
     "engines" : {
