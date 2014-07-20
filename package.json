@@ -33,5 +33,6 @@
     "engines" : {
         "node": ">=0.10"
     },
-    "author": "Mathias Schreck <schreck.mathias@gmail.com>"
+    "author": "Mathias Schreck <schreck.mathias@gmail.com>",
+    "license": "beerware"
 }
