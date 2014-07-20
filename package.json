@@ -16,7 +16,8 @@
     },
     "dependencies": {
         "bluebird": "~2.2.2",
-        "homedir": "~0.3.0"
+        "homedir": "~0.3.0",
+        "ignore": "~2.2.14"
     },
     "devDependencies": {
         "eslint": "0.7.4",
