@@ -1,7 +1,7 @@
 {
     "name": "homesync",
     "version": "0.0.1",
-    "description": "",
+    "description": "Keep your dotfiles in sync.",
     "main": "lib/homesync.js",
     "bin": "lib/cli.js",
     "scripts": {
