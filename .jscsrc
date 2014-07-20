@@ -79,7 +79,6 @@
         "catch"
     ],
     "requireLineFeedAtFileEnd": true,
-    "maximumLineLength": 120,
     "requireCapitalizedConstructors": true,
     "requireDotNotation": true,
     "disallowYodaConditions": true
