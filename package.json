@@ -2,7 +2,8 @@
     "name": "homesync",
     "version": "0.0.1",
     "description": "",
-    "main": "index.js",
+    "main": "lib/homesync.js",
+    "bin": "lib/cli.js",
     "scripts": {
         "test": "npm run lint && npm run unit-test",
         "unit-test": "istanbul test --dir build/coverage _mocha test -- --recursive --reporter spec",
