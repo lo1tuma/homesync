@@ -15,7 +15,8 @@
         "url": "https://github.com/lo1tuma/homesync.git"
     },
     "dependencies": {
-        "bluebird": "~2.2.2"
+        "bluebird": "~2.2.2",
+        "homedir": "~0.3.0"
     },
     "devDependencies": {
         "eslint": "0.7.4",
