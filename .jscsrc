@@ -1,0 +1,87 @@
+{
+    "excludeFiles": [
+        "node_modules/**",
+        ".idea/**",
+        "build/**"
+    ],
+    "requireCurlyBraces": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch",
+        "switch",
+        "default"
+    ],
+    "requireSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "return",
+        "try",
+        "catch",
+        "throw",
+        "function",
+        "case"
+    ],
+    "requireSpaceBeforeBlockStatements": true,
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+    "requireSpacesInNamedFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireMultipleVarDecl": true,
+    "requireBlocksOnNewline": true,
+    "disallowEmptyBlocks": true,
+    "requireSpacesInsideObjectBrackets": "all",
+    "requireSpacesInsideArrayBrackets": "all",
+    "disallowSpacesInsideParentheses": true,
+    "disallowQuotedKeysInObjects": "allButReserved",
+    "disallowDanglingUnderscores": true,
+    "disallowSpaceAfterObjectKeys": true,
+    "requireCommaBeforeLineBreak": true,
+    "requireOperatorBeforeLineBreak": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "disallowKeywords": ["with"],
+    "disallowMultipleLineStrings": true,
+    "disallowMultipleLineBreaks": true,
+    "validateLineBreaks": "LF",
+    "validateQuoteMarks": "'",
+    "validateIndentation": 4,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowTrailingComma": true,
+    "disallowKeywordsOnNewLine": [
+        "else",
+        "catch"
+    ],
+    "requireLineFeedAtFileEnd": true,
+    "maximumLineLength": 120,
+    "requireCapitalizedConstructors": true,
+    "requireDotNotation": true,
+    "disallowYodaConditions": true
+}
