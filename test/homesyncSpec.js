@@ -1,3 +1,5 @@
+'use strict';
+
 var referee = require('referee'),
     sinon = require('sinon'),
     refereeSinon = require('referee-sinon'),
