@@ -16,19 +16,19 @@
         "url": "https://github.com/lo1tuma/homesync.git"
     },
     "dependencies": {
-        "bluebird": "~2.2.2",
+        "bluebird": "~2.3.10",
         "homedir": "~0.3.0",
         "ignore": "~2.2.14",
-        "commander": "~2.3.0"
+        "commander": "~2.5.0"
     },
     "devDependencies": {
-        "eslint": "0.7.4",
-        "jscs": "1.5.8",
-        "mocha": "1.20.1",
-        "sinon": "1.10.3",
-        "referee": "1.0.3",
+        "eslint": "0.9.2",
+        "jscs": "1.7.3",
+        "mocha": "2.0.1",
+        "sinon": "1.11.1",
+        "referee": "1.1.0",
         "referee-sinon": "1.0.2",
-        "istanbul": "0.3.0",
+        "istanbul": "0.3.2",
         "proxyquire": "1.0.1"
     },
     "engines" : {
