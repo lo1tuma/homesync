@@ -14,10 +14,9 @@ var referee = require('referee'),
     fs = require('fs'),
     path = require('path'),
     Promise = require('bluebird'),
-    expect;
+    expect = referee.expect;
 
 refereeSinon(referee, sinon);
-expect = require('referee/lib/expect').bind(referee);
 
 describe('homesync', function () {
     var addIgnoreFile,
