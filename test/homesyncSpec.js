@@ -67,8 +67,10 @@ describe('homesync', function () {
 
         fs.readdirAsync.returns(Promise.resolve(directoryEntries));
         ignoreFilter.returns(directoryEntries);
-        fs.lstatAsync.withArgs('/example/folderToSync/foo').returns(Promise.resolve({ isDirectory: sinon.stub().returns(true) }));
-        fs.lstatAsync.withArgs('/example/folderToSync/bar.json').returns(Promise.resolve({ isDirectory: sinon.stub().returns(false) }));
+        fs.lstatAsync.withArgs('/example/folderToSync/foo')
+            .returns(Promise.resolve({ isDirectory: sinon.stub().returns(true) }));
+        fs.lstatAsync.withArgs('/example/folderToSync/bar.json')
+            .returns(Promise.resolve({ isDirectory: sinon.stub().returns(false) }));
 
         homesync('/folderToSync')
             .then(function () {
@@ -83,8 +85,10 @@ describe('homesync', function () {
                 expect(fs.lstatAsync).toHaveBeenCalledWithExactly('/example/folderToSync/bar.json');
 
                 expect(fs.symlinkAsync).toHaveBeenCalledTwice();
-                expect(fs.symlinkAsync).toHaveBeenCalledWithExactly('/example/folderToSync/foo', '/Users/anyUser/foo', 'dir');
-                expect(fs.symlinkAsync).toHaveBeenCalledWithExactly('/example/folderToSync/bar.json', '/Users/anyUser/bar.json', 'file');
+                expect(fs.symlinkAsync)
+                    .toHaveBeenCalledWithExactly('/example/folderToSync/foo', '/Users/anyUser/foo', 'dir');
+                expect(fs.symlinkAsync)
+                    .toHaveBeenCalledWithExactly('/example/folderToSync/bar.json', '/Users/anyUser/bar.json', 'file');
             })
             .done(done, done);
     });
@@ -94,8 +98,10 @@ describe('homesync', function () {
 
         fs.readdirAsync.returns(Promise.resolve(directoryEntries));
         ignoreFilter.returns(directoryEntries);
-        fs.lstatAsync.withArgs('/example/folderToSync/foo').returns(Promise.resolve({ isDirectory: sinon.stub().returns(true) }));
-        fs.lstatAsync.withArgs('/Users/anyUser/foo').returns(Promise.resolve({ isSymbolicLink: sinon.stub().returns(true) }));
+        fs.lstatAsync.withArgs('/example/folderToSync/foo')
+            .returns(Promise.resolve({ isDirectory: sinon.stub().returns(true) }));
+        fs.lstatAsync.withArgs('/Users/anyUser/foo')
+            .returns(Promise.resolve({ isSymbolicLink: sinon.stub().returns(true) }));
         fs.existsAsync.withArgs('/Users/anyUser/foo').returns(Promise.reject());
 
         homesync('/folderToSync')
@@ -116,8 +122,10 @@ describe('homesync', function () {
 
         fs.readdirAsync.returns(Promise.resolve(directoryEntries));
         ignoreFilter.returns(directoryEntries);
-        fs.lstatAsync.withArgs('/example/folderToSync/foo').returns(Promise.resolve({ isDirectory: sinon.stub().returns(true) }));
-        fs.lstatAsync.withArgs('/Users/anyUser/foo').returns(Promise.resolve({ isSymbolicLink: sinon.stub().returns(false) }));
+        fs.lstatAsync.withArgs('/example/folderToSync/foo')
+            .returns(Promise.resolve({ isDirectory: sinon.stub().returns(true) }));
+        fs.lstatAsync.withArgs('/Users/anyUser/foo')
+            .returns(Promise.resolve({ isSymbolicLink: sinon.stub().returns(false) }));
         fs.existsAsync.withArgs('/Users/anyUser/foo').returns(Promise.reject());
 
         homesync('/folderToSync')
@@ -126,5 +134,4 @@ describe('homesync', function () {
             })
             .done(done, done);
     });
-
 });
